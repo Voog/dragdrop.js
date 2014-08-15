@@ -1,0 +1,74 @@
+body {
+  font-family: 'Avenir Next';
+  color: #666;
+}
+
+h1, h2, h3 {
+  color: #3d3c40;
+  font-weight: 500;
+}
+
+.draggable {
+	background-color: #a8a1a7;
+	border-radius: 3px;
+	display: inline-block;
+}
+
+.draggable-simple {
+	cursor: move;
+	width: 300px;
+	height: 100px;
+}
+
+.draggable-small {
+	cursor: move;
+	width: 100px;
+	height: 100px;
+}
+
+.draggable-with-handler {
+    width: 150px;
+	height: 150px;
+	position: relative;
+}
+
+.draggable-handler {
+	position: absolute;
+	width: 30px;
+	height: 30px;
+	top: 10px;
+	left: 10px;
+	background-color: #ccc;
+	border-radius: 3px;
+	cursor: move;
+}
+
+ul {
+	list-style: none;
+}
+
+ul.sortable li {
+	height: 30px;
+	background-color: #a8a1a7;
+	margin-bottom: 5px;
+	cursor: move;
+	border-radius: 3px;
+}
+
+.sortable {
+	background-color: #eee;
+	padding: 10px;
+	border-radius: 3px;
+}
+
+.sortable-empty {
+}
+
+.sortable-item {
+	background-color: #a8a1a7;
+	width: 100px;
+	height: 100px;
+	display: inline-block;
+	cursor: move;
+	border-radius: 3px;
+}
