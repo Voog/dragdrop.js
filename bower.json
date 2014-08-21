@@ -1,0 +1,16 @@
+{
+  "name": "dragdrop",
+  "version": "0.0.1",
+  "main": "dist/dragdrop.js",
+  "ignore": [
+    "external",
+    "node_modules",
+    ".*",
+    "_SpecRunner.html"
+  ],
+  "devDependencies": {
+    "jasmine": ">=2",
+    "jquery": ">=2",
+    "jasmine-jquery": ">=2"
+  }
+}

@@ -56,7 +56,7 @@ module.exports = function(grunt) {
         options: {
           display: 'short',
           specs: 'spec/*Spec.js',
-          helpers: 'spec/*Helper.js'
+          helpers: ['external/jquery/dist/jquery.min.js', 'external/jasmine-jquery/lib/jasmine-jquery.js']
         }
       }
     },
