@@ -72,3 +72,22 @@ ul.sortable li {
 	cursor: move;
 	border-radius: 3px;
 }
+
+.helper {
+  background-color: #8a0000;
+  width: 100px;
+  height: 100px;
+  border-radius: 3px;
+}
+
+.droptarget {
+  outline: 1px dotted red;
+}
+
+.in-rect-cache {
+  outline: 1px dotted rgba(255,0,0,.75);
+}
+
+.best-match {
+  background-color: rgba(255,255,0,.75);
+}
