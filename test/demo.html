@@ -2,12 +2,13 @@
 <head>
   <meta charset="utf-8" />
 
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui=1">
   
   <title>Drag drop demo</title>
   <link rel="stylesheet" href="./stylesheets/demo.css" type="text/css" media="screen" charset="utf-8">
   <script src="../external/jquery/dist/jquery.min.js" type="text/javascript" charset="utf-8"></script>
-  <script src="../lib/dragdrop.js" type="text/javascript" charset="utf-8"></script>
+  <script src="../lib/draggable.js" type="text/javascript" charset="utf-8"></script>
+  <script src="../lib/droppable.js" type="text/javascript" charset="utf-8"></script>
 </head>
 
 <body>
@@ -26,9 +27,12 @@ $(function() {
       return $('<div/>', {'class': 'helper'}).get(0);
     }
   });
+});
 </script>
 
 <h3>Many draggables</h3>
+
+<p>Try this one out on multi-touch screen</p>
 
 <div class="draggable draggable-small"></div>
 <div class="draggable draggable-small"></div>
@@ -100,13 +104,26 @@ $(function() {
 <h3>Inline drop</h3>
 
 <div class="inline-droppable">
-<p>Tonx 90's gastropub, flexitarian meggings High Life cardigan lo-fi actually Thundercats church-key. Freegan locavore asymmetrical, chillwave irony you probably haven't heard of them whatever seitan stumptown drinking vinegar lomo food truck narwhal wayfarers. Put a bird on it Banksy PBR raw denim post-ironic, messenger bag polaroid flannel YOLO pork belly vinyl. Typewriter normcore flannel gentrify mustache. Truffaut meggings +1 chambray, cred fanny pack paleo disrupt ugh Carles twee.</p>
+  <p>Tonx 90's gastropub, flexitarian meggings High Life cardigan lo-fi actually Thundercats church-key. Freegan locavore asymmetrical, chillwave irony you probably haven't heard of them whatever seitan stumptown drinking vinegar lomo food truck narwhal wayfarers. Put a bird on it Banksy PBR raw denim post-ironic, messenger bag polaroid flannel YOLO pork belly vinyl. Typewriter normcore flannel gentrify mustache. Truffaut meggings +1 chambray, cred fanny pack paleo disrupt ugh Carles twee.</p>
 
-<div>
-Swag beard pickled wolf, you <b>probably haven't</b> heard of them paleo literally mixtape <a href="http://www.skateboard.com">Truffaut skateboard</a> before they sold out. Hoodie fixie direct trade occupy Neutra Banksy. Vinyl put a bird on it seitan XOXO. Bushwick brunch shabby chic flannel 8-bit lomo street art twee Carles, bitters seitan bicycle rights wayfarers art party fap.
+  <div>
+    Swag beard pickled wolf, you <b>probably haven't</b> heard of them paleo literally mixtape <a href="http://www.skateboard.com">Truffaut skateboard</a> before they sold out. Hoodie fixie direct trade occupy Neutra Banksy. Vinyl put a bird on it seitan XOXO. Bushwick brunch shabby chic flannel 8-bit lomo street art twee Carles, bitters seitan bicycle rights wayfarers art party fap.
+  </div>
+
+  <p>Portland locavore XOXO fap scenester Tumblr pour-over mixtape raw denim vegan. Try-hard tattooed Pitchfork semiotics quinoa. Chillwave selfies sartorial, Intelligentsia messenger bag you probably haven't heard of them lo-fi. Vinyl mumblecore forage tousled kitsch cray, Helvetica Wes Anderson Odd Future Blue Bottle craft beer viral kale chips tofu skateboard.</p>
 </div>
 
-<p>Portland locavore XOXO fap scenester Tumblr pour-over mixtape raw denim vegan. Try-hard tattooed Pitchfork semiotics quinoa. Chillwave selfies sartorial, Intelligentsia messenger bag you probably haven't heard of them lo-fi. Vinyl mumblecore forage tousled kitsch cray, Helvetica Wes Anderson Odd Future Blue Bottle craft beer viral kale chips tofu skateboard.</p>
-</div>
+<pre>
+droppable('.inline-droppable', {
+});
+</pre>
+
+<script type="text/javascript">
+$(function() {
+  droppable(document.querySelectorAll('.inline-droppable'), {
+    accepts: 'draggable-simple'
+  });
+});
+</script>
 </body>
 </html>
