@@ -14,7 +14,7 @@ module.exports = function(grunt) {
         stripBanners: true
       },
       dist: {
-        src: ['lib/draggable.js', 'lib/droppable.js'],
+        src: ['lib/dragdrop.js', 'lib/draggable.js', 'lib/sortable.js', 'lib/resizable.js'],
         dest: 'dist/<%= pkg.name %>.js'
       }
     },
